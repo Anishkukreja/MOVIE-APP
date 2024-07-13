@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search any moive" id="moviename">
+            <button class="btn" onclick="search()">Search Movie</button>
+        </div>
+    </div>
+
+    <div class="loader-container"  id="loader-container">
+        <div id="loader" class="loader"></div>
+    </div>
+
+    <div id="movie-container" class="movie-container">
+        <div class="details">
+            <div class="info">
+                <h2 id="title">The rrr</h2>
+                <p>Released on: <span id="Released-on"></span></p>
+                <p>director: <span id="director"></span></p>
+                <p>Actors: <span id="Actors"></span></p>
+                <p>Genre: <span id="Genre"></span></p>
+                <p>Desc: <span id="Desc"></span></p>
+                <p>Box office collection: <span id="BoxOfficeCollection"></span></p>
+                <p>Awards: <span id="Awards"></span></p>
+                <p>Writer: <span id="Writer"></span></p>
+                <p class="rating"> IMDB:<span id="ratings"></span> </p>
+            </div>
+        </div>
+        <div class="poster">
+            <img id="img" src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+            alt="">
+        </div>
+    </div>
+
+    <script src="movie.js"></script>
+</body>
+
+</html>
